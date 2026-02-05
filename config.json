@@ -1,0 +1,15 @@
+{
+    "overlayFiles": [
+        "campaign1.json",
+        "campaign2.json"
+    ],
+    "overlayActive": [
+        true,
+        false
+    ],
+    "mapCenter": [
+        51.505,
+        -0.09
+    ],
+    "mapZoom": 13
+}
