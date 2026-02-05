@@ -19,7 +19,7 @@
 }
 
 .overlay-item label {
-    display: block;
+    display: inline;
 }
 
 .poi-item {
