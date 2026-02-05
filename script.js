@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             overlays[index].points.forEach(poi => {
                 const marker = L.marker([poi.latitude, poi.longitude], {overlayIndex: index}).addTo(map);
                 let popupContent = `<h4>${poi.caption}</h4><p>${poi.description}</p>`;
-                if (poi.timestamp) popupContent += `<p>Timestamp: ${poi.timestamp}</p>`;
+                if (poi.displayTime) popupContent += `<p>Time: ${poi.displayTime}</p>`;
                 if (poi.images.length > 0) {
                     popupContent += '<p>Images:</p>';
                     poi.images.forEach(img => {
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
         chronoNearby.forEach(poi => {
             const div = document.createElement('div');
             div.className = 'poi-item';
-            div.innerHTML = `<h4>${poi.caption}</h4><p>${poi.description}</p><p>Timestamp: ${poi.timestamp}</p>`;
+            div.innerHTML = `<h4>${poi.caption}</h4><p>${poi.description}</p><p>Time: ${poi.displayTime}</p>`;
             div.addEventListener('click', () => {
                 map.flyTo([poi.latitude, poi.longitude], map.getZoom());
             });
