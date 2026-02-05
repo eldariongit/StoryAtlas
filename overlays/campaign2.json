@@ -1,0 +1,23 @@
+{
+    "name": "Campaign 2: Dragon's Lair",
+    "points": [
+        {
+            "caption": "Dragon's Mountain",
+            "description": "The mountain where the dragon resides.",
+            "timestamp": "2023-06-01T12:00:00Z",
+            "latitude": 51.52,
+            "longitude": -0.08,
+            "images": ["dragon.jpg"],
+            "creationTime": "2023-05-25T10:00:00Z"
+        },
+        {
+            "caption": "Wizard's Tower",
+            "description": "Tower of the ancient wizard.",
+            "timestamp": "2023-06-05T16:00:00Z",
+            "latitude": 51.53,
+            "longitude": -0.07,
+            "images": [],
+            "creationTime": "2023-05-28T11:00:00Z"
+        }
+    ]
+}

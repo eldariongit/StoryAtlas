@@ -1,0 +1,43 @@
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 300px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#map {
+    flex: 1;
+}
+
+.overlay-item {
+    margin-bottom: 10px;
+}
+
+.overlay-item label {
+    display: block;
+}
+
+.poi-item {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.poi-item h4 {
+    margin: 0;
+}
+
+.poi-item p {
+    margin: 5px 0;
+}
+
+#recent-poi {
+    cursor: pointer;
+}

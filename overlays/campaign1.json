@@ -1,0 +1,23 @@
+{
+    "name": "Campaign 1: The Lost Kingdom",
+    "points": [
+        {
+            "caption": "Castle Ruins",
+            "description": "Ancient castle where the king was betrayed.",
+            "timestamp": "2023-05-15T10:00:00Z",
+            "latitude": 51.505,
+            "longitude": -0.09,
+            "images": ["castle1.jpg", "castle2.jpg"],
+            "creationTime": "2023-05-10T08:00:00Z"
+        },
+        {
+            "caption": "Hidden Village",
+            "description": "A village hidden in the forest.",
+            "timestamp": "2023-05-20T14:00:00Z",
+            "latitude": 51.51,
+            "longitude": -0.1,
+            "images": [],
+            "creationTime": "2023-05-12T09:00:00Z"
+        }
+    ]
+}
