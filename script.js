@@ -23,6 +23,14 @@ async function init() {
         let allPOIs = [];
         let activeOverlays = new Set(overlayActive.map((active, index) => active ? index : null).filter(i => i !== null));
 
+        // Custom marker icon
+        const customIcon = L.icon({
+            iconUrl: 'assets/icons/fist.png',
+            iconSize: [25, 25],
+            iconAnchor: [12, 12],
+            popupAnchor: [0, -12]
+        });
+
         // Function to calculate distance between two points (haversine formula)
         function getDistance(lat1, lon1, lat2, lon2) {
             const R = 6371; // Radius of the Earth in km
@@ -86,7 +94,7 @@ async function init() {
                 activeOverlays.add(index);
                 // Add markers
                 overlays[index].points.forEach(poi => {
-                    const marker = L.marker([poi.latitude, poi.longitude], {overlayIndex: index}).addTo(map);
+                    const marker = L.marker([poi.latitude, poi.longitude], {icon: customIcon, overlayIndex: index}).addTo(map);
                     let popupContent = `<h4>${poi.caption}</h4><p>${poi.description}</p>`;
                     if (poi.displayTime) popupContent += `<p>Time: ${poi.displayTime}</p>`;
                     if (poi.images.length > 0) {
